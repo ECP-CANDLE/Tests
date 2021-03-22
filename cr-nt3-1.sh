@@ -9,8 +9,20 @@ echo
 echo "START: CR-NT3-1 ..."
 echo
 
-THIS=$(       readlink --canonicalize $( dirname $0 ) )
-BENCHMARKS=$( readlink --canonicalize $THIS/../Benchmarks )
+THIS=$( readlink --canonicalize $( dirname $0 ) )
+
+if [[ -d $THIS/../Benchmarks ]]
+then
+  BENCHMARKS=$THIS/../Benchmarks
+elif [[ -d $THIS/Benchmarks ]]
+then
+  BENCHMARKS=$THIS/Benchmarks
+else
+  echo "Could not find Benchmarks!"
+  exit 1
+fi
+
+BENCHMARKS=$( readlink --canonicalize $BENCHMARKS )
 NT3=$BENCHMARKS/Pilot1/NT3/nt3_baseline_keras2.py
 
 echo "THIS: $THIS"
