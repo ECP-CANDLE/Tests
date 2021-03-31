@@ -10,6 +10,20 @@ These should be runnable interactively or via Jenkins.
 The Jenkins project is here:
 https://jenkins-ci.cels.anl.gov/job/CANDLE-CR
 
+== Usage
+
+First, make sure your desired Python installation is in PATH and PYTHONPATH as needed.
+
+Second, simply run the test you want, e.g.:
+
+----
+$ nice ./cr-nt3-1.sh
+----
+
+== Conventions
+
+Each test has a separate run directory (RUNDIR), but this is overwritten from run to run.  We assume the numbered/dated output logs in Jenkins will capture everything needed to debug a test run.
+
 == Utilities
 
 check-count.sh::
