@@ -2,3 +2,41 @@
 = Tests
 
 CANDLE tests
+
+These should be runnable interactively or via Jenkins.
+
+== Info
+
+The Jenkins project is here:
+https://jenkins-ci.cels.anl.gov/job/CANDLE-CR
+
+== Utilities
+
+check-count.sh::
+Output checker
+
+check-output.sh::
+Output checker
+
+check_tf.py::
+Keras/TensorFlow settings reporter
+
+checkout-benchmarks.sh::
+Checks out or updates Benchmarks into a subdirectory
+
+py-settings.sh::
+Report Python settings
+
+utils.sh::
+Shell scripting tools
+
+== Test list
+
+cr-nt3-1.sh::
+Test checkpoint/restart for NT3
+
+== Adding a new test
+
+. Duplicate cr-nt3-1.sh
+. Change the commands in the subshell to do what you want
+. Check the output with the check-*.sh scripts or add your own tests
