@@ -52,12 +52,12 @@ cd        $RUNDIR
   set -x
   /bin/pwd
 
-  # # 1: Fresh run w/ checksums
+  # 1: Fresh run w/ checksums
   python3 $NT3 --epochs 3 --ckpt_checksum True |& tee    run-1.out
   check-output.sh "Epoch 3/3"        run-1.out
   check-output.sh "checksummed:"     run-1.out
 
-  # # 2: Restart run w/ checksums
+  # 2: Restart run w/ checksums
   python3 $NT3 --epochs 5 \
                --ckpt_checksum True \
                --ckpt_restart_mode "required" \
@@ -66,7 +66,7 @@ cd        $RUNDIR
   check-output.sh "Epoch 5/5"                run-2.out
   check-output.sh "checksummed:"             run-2.out
 
-  # # 3: Fresh run w/o checksums
+  # 3: Fresh run w/o checksums
   python3 $NT3 --epochs 3                \
                --ckpt_restart_mode "off" \
                --ckpt_checksum False     \
