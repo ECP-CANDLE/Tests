@@ -12,5 +12,5 @@ then
 else
   git clone https://github.com/ECP-CANDLE/Benchmarks.git
   cd Benchmarks
-  git checkout issue-86
+  # git checkout issue-86 # On branch 'develop' as of 2021-03-31
 fi
