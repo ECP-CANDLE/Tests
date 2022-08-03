@@ -87,8 +87,6 @@ then
   fi
 fi
 
-exit
-
 (
   set -x
   /bin/pwd
