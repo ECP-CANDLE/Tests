@@ -92,13 +92,14 @@ fi
   /bin/pwd
 
   # 1: Fresh run w/ checksums
-  python3 $NT3 --epochs 3 --ckpt_checksum True |& tee    run-1.out
+  python3 $NT3 --epochs 3 --ckpt_checksum True --ckpt_save_interval 1 |& tee    run-1.out
   check-output.sh "Epoch 3/3"        run-1.out
   check-output.sh "checksummed:"     run-1.out
 
   # 2: Restart run w/ checksums
   python3 $NT3 --epochs 5 \
                --ckpt_checksum True \
+               --ckpt_save_interval 1 \
                --ckpt_restart_mode "required" \
                                       |& tee run-2.out
   check-output.sh "restarting from epoch: 3" run-2.out
