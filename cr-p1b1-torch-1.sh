@@ -81,7 +81,7 @@ cd        $RUNDIR
 
   # 4: Fresh run, limit checkpoints kept
   rm -rfv runs/cr-p1b1-1/save/ckpts/epochs
-  python3 $p1b1 --epochs 10              \
+  python3 $P1B1 --epochs 10              \
                --ckpt_restart_mode "off" \
                --ckpt_save_best False    \
                --ckpt_keep_limit 1       \
