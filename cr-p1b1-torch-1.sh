@@ -70,7 +70,7 @@ cd        $RUNDIR
   check-output.sh "Epoch: 4 Average"         run-2.out
   check-output.sh "checksummed:"             run-2.out
 
-  # 3: Fresh run w/o checksums
+  # 3: Fresh run w/o restart/checksums
   python3 $P1B1 --epochs 3               \
                --ckpt_restart_mode "off" \
                --ckpt_checksum False     \

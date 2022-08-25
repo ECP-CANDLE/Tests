@@ -49,6 +49,9 @@ Shell scripting tools
 cr-nt3-1.sh::
 Test checkpoint/restart for NT3
 
+cr-p1b1-torch-1.sh::
+Test checkpoint/restart for P1B1/PyTorch
+
 == Adding a new test
 
 . Duplicate cr-nt3-1.sh
