@@ -84,7 +84,8 @@ cd        $RUNDIR
   python3 $P1B1 --epochs 10              \
                --ckpt_restart_mode "off" \
                --ckpt_save_best False    \
-               --ckpt_keep_limit 1       \
+               --ckpt_keep_limit    1    \
+               --ckpt_save_interval 1    \
                --ckpt_checksum False     \
                            |& tee    run-4.out
   check-output.sh -n "restarting:"   run-4.out
