@@ -28,7 +28,7 @@ $ ./cr-list.sh
 
 == Conventions
 
-Each test has a separate run directory (RUNDIR), but this is overwritten from run to run.  We assume the numbered/dated output logs in Jenkins will capture everything needed to debug a test run.
+Each test has a separate run directory (RUNDIR), but this is overwritten from run to run.  We assume the numbered/dated output logs in Jenkins will capture everything needed to debug a historical test run.
 
 Each test is associated with a TOKEN based on its directory name ("NT3", "P1B1", etc.).  A corresponding `setup-TOKEN.sh` may be created that will automatically be sourced by the scripts.
 
