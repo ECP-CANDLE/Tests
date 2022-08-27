@@ -1,6 +1,8 @@
 
 # SETUP TEST
 # Setup single test
+# Assumes shell variable BMK is set to the fully-qualified
+#         Benchmark script name
 
 # TOKEN: Short name for Benchmark: "NT3", "P1B1", etc.
 TOKEN=$( basename $( dirname $BMK ) )
