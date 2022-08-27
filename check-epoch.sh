@@ -4,8 +4,8 @@ set -eu
 # CHECK EPOCH SH
 
 # Check for epoch number in given OUTPUT file
-# for appropriate environment variable BACKEND="keras"|"torch"
-# with nice error message
+#       for appropriate environment variable BACKEND="keras"|"torch"
+#       with nice error message
 
 if (( ${#} != 2 ))
 then
