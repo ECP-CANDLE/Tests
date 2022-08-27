@@ -79,4 +79,4 @@ Internal test pattern script.  Runs any Benchmark and applies a sequence of CAND
 
 . Duplicate `cr-1.sh` and `cr-list-1.sh`
 . Change the commands in the `cr-1.sh` to do what you want
-. Check the output with the check-*.sh scripts or add your own tests
+. Check the output with the `check-*.sh` scripts or add your own tests
