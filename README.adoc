@@ -17,43 +17,66 @@ First, make sure your desired Python installation is in PATH and PYTHONPATH as n
 Second, simply run the test you want, e.g.:
 
 ----
-$ nice ./cr-nt3-1.sh
+$ ./cr-nt3-1.sh
+----
+
+or to run all tests:
+
+----
+$ ./cr-list.sh
 ----
 
 == Conventions
 
 Each test has a separate run directory (RUNDIR), but this is overwritten from run to run.  We assume the numbered/dated output logs in Jenkins will capture everything needed to debug a test run.
 
+Each test is associated with a TOKEN based on its directory name ("NT3", "P1B1", etc.).  A corresponding `setup-TOKEN.sh` may be created that will automatically be sourced by the scripts.
+
 == Utilities
 
-check-count.sh::
+`check-count.sh`::
+Check counts of things like files
+
+`check-epoch.sh`::
+Output checker for epochs.  Knows how to find epoch output for Keras and PyTorch
+
+`check-output.sh`::
 Output checker
 
-check-output.sh::
-Output checker
-
-check_tf.py::
+`check_tf.py`::
 Keras/TensorFlow settings reporter
 
-checkout-benchmarks.sh::
+`checkout-benchmarks.sh`::
 Checks out or updates Benchmarks into a subdirectory
 
-py-settings.sh::
+`find-benchmarks.sh`::
+Find the directory `Benchmarks`
+
+`py-settings.sh`::
 Report Python settings
 
-utils.sh::
-Shell scripting tools
+`setup-tests.sh`::
+Sets up Python, `PATH`, etc.  Needed only once for a series of tests.
+
+`setup-test.sh`::
+Sets up a particular Benchmark
+
+`utils.sh`::
+Generic shell scripting tools
 
 == Test list
 
-cr-nt3-1.sh::
+`cr-nt3-1.sh`::
 Test checkpoint/restart for NT3
 
-cr-p1b1-torch-1.sh::
+`cr-p1b1-torch-1.sh`::
 Test checkpoint/restart for P1B1/PyTorch
+
+`cr-1.sh`::
+Internal test pattern script.  Runs any Benchmark and applies a sequence of CANDLE checkpoint/restart arguments.
 
 == Adding a new test
 
-. Duplicate cr-nt3-1.sh
-. Change the commands in the subshell to do what you want
+. Duplicate `cr-1.sh` and `cr-list-1.sh`
+. Change the commands in the `cr-1.sh` to do what you want
 . Check the output with the check-*.sh scripts or add your own tests
