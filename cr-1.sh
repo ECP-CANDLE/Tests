@@ -23,7 +23,7 @@ source $THIS/setup-test.sh
   python3 $BMK --epochs 3             \
                --ckpt_checksum True   \
                --ckpt_save_interval 1 \
-                           |& tee    run-1.out
+                           | tee    run-1.out
   check-epoch.sh  3                  run-1.out
   check-output.sh "checksummed:"     run-1.out
 
@@ -32,7 +32,7 @@ source $THIS/setup-test.sh
                --ckpt_checksum True \
                --ckpt_save_interval 1 \
                --ckpt_restart_mode "required" \
-                                      |& tee run-2.out
+                                      | tee run-2.out
   check-output.sh "restarting from epoch: 3" run-2.out
   check-epoch.sh  5                          run-2.out
   check-output.sh "checksummed:"             run-2.out
@@ -41,7 +41,7 @@ source $THIS/setup-test.sh
   python3 $BMK --epochs 3                \
                --ckpt_restart_mode "off" \
                --ckpt_checksum False     \
-                           |& tee    run-3.out
+                           | tee    run-3.out
   check-output.sh -n "restarting"    run-3.out
   check-output.sh -n "checksummed:"  run-3.out
   check-epoch.sh     3               run-3.out
@@ -53,7 +53,7 @@ source $THIS/setup-test.sh
                --ckpt_keep_limit 1       \
                --ckpt_save_interval 1    \
                --ckpt_checksum False     \
-                           |& tee    run-4.out
+                           | tee    run-4.out
   check-output.sh -n "restarting:"   run-4.out
   check-output.sh -n "checksummed:"  run-4.out
   check-epoch.sh     10              run-4.out
