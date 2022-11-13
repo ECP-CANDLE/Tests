@@ -6,9 +6,6 @@ echo SUPERVISOR=$SUPERVISOR
 
 set -x
 
-swift-t -v
-exit
-
 cd $SUPERVISOR/workflows/upf
 
 test/upf-1.sh nt3 gce
