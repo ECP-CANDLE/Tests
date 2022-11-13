@@ -1,6 +1,9 @@
 #!/bin/bash -eu
 
-THIS=$( dirname $0 )
-source $THIS/settings.sh
+echo "UPF NIGHTLY GCE"
 
-swift-t -v
+echo SUPERVISOR=$SUPERVISOR
+
+set -x
+
+ls $SUPERVISOR
