@@ -7,7 +7,11 @@ echo SUPERVISOR=$SUPERVISOR
 
 set -x
 
+hostname
+
 cd $SUPERVISOR/workflows/upf
+
+pwd
 
 test/upf-1.sh nt3 gce
 
