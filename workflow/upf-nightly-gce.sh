@@ -6,4 +6,6 @@ echo SUPERVISOR=$SUPERVISOR
 
 set -x
 
-ls $SUPERVISOR
+cd $SUPERVISOR/workflows/upf
+
+./upf-1.sh
