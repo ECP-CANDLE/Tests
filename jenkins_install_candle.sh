@@ -10,4 +10,5 @@ conda activate /nfs/gce/globalscratch/jain/conda_installs
 cd ../candle_lib
 pip install .
 # run tests
-python -m tests
+echo "CANDLE_DATA_DIR is set to: ", $CANDLE_DATA_DIR
+python -m pytest
