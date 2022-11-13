@@ -9,3 +9,5 @@ conda env list
 conda activate /nfs/gce/globalscratch/jain/conda_installs
 cd ../candle_lib
 pip install .
+# run tests
+python -m tests
