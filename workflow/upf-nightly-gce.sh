@@ -1,4 +1,5 @@
-#!/bin/bash -eu
+#!/bin/bash
+set -eu
 
 echo "UPF NIGHTLY GCE: START " $( date "+%Y-%m-%d %H:%M" )
 
