@@ -9,7 +9,7 @@ set -x
 
 hostname
 
-cd $SUPERVISOR/workflows/mlrmbo
+cd $SUPERVISOR/workflows/mlrMBO
 
 pwd
 
