@@ -20,4 +20,4 @@ which python
 
 python mnist_candle.py
 
-echo MNIST GCE: STOP" $( date "+%Y-%m-%d %H:%M" )
+echo "MNIST GCE: STOP " $( date "+%Y-%m-%d %H:%M" )
