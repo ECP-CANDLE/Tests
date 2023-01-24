@@ -17,4 +17,4 @@ ls $CANDLE_DATA_DIR
 
 test/test-nightly.sh nt3 gce
 
-echo "MLRMBO NIGHTLY GCE: STOP" $( date "+%Y-%m-%d %H:%M" )
+echo "NT3 MLRMBO NIGHTLY GCE: STOP" $( date "+%Y-%m-%d %H:%M" )
