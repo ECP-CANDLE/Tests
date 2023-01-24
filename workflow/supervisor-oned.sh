@@ -15,8 +15,9 @@ pwd
 export CANDLE_DATA_DIR=/nfs/gce/globalscratch/jain/Data
 ls $CANDLE_DATA_DIR
 
-test/test-nightly.sh oned gce
-ls -ltrh turbine-output/
+# Disable mlrmbo while debugging GA below
+# test/test-nightly.sh oned gce
+# ls -ltrh turbine-output/
 
 echo "OneD MLRMBO NIGHTLY GCE: STOP" $( date "+%Y-%m-%d %H:%M" )
 
