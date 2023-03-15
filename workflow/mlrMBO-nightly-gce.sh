@@ -12,7 +12,7 @@ hostname
 cd $SUPERVISOR/workflows/mlrMBO
 
 pwd
-export CANDLE_DATA_DIR=/nfs/gce/globalscratch/jain/Data
+export CANDLE_DATA_DIR=/nfs/gce/globalscratch/jain/Data/Pilot1
 ls $CANDLE_DATA_DIR
 
 test/test-nightly.sh nt3 gce
