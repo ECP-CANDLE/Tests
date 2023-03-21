@@ -18,6 +18,6 @@ ls $CANDLE_DATA_DIR
 PATH=/nfs/gce/globalscratch/jain/conda_installs/bin:$PATH
 which python
 
-python mnist_candle.py
+nice -n 19 python mnist_candle.py
 
 echo "MNIST GCE: STOP " $( date "+%Y-%m-%d %H:%M" )
