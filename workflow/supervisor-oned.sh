@@ -19,6 +19,13 @@ ls $CANDLE_DATA_DIR
 test/test-nightly.sh oned gce
 ls -ltrh turbine-output/
 
+# Load the RDS file
+data <- readRDS("./turbine-output/final_res.Rds")
+
+x<-data[["x"]]
+y<-data[["y"]]
+print(x)
+print(y)
 echo "OneD MLRMBO NIGHTLY GCE: STOP" $( date "+%Y-%m-%d %H:%M" )
 
 echo "GA OneD NIGHTLY GCE: START " $( date "+%Y-%m-%d %H:%M" )
