@@ -12,6 +12,9 @@ echo
 export THIS=$( realpath $( dirname $0 ) )
 source $THIS/setup-tests.sh
 
+export CANDLE_DATA_DIR=/nfs/gce/globalscratch/jain/Data
+export CANDLE_OUTPUT_DIR=$BENCHMARKS/Pilot1/P1B1/
+
 BMK=$BENCHMARKS/Pilot1/P1B1/p1b1_baseline_pytorch.py
 
 $THIS/cr-1.sh $BMK
