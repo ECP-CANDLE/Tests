@@ -19,6 +19,8 @@ source $THIS/setup-test.sh
   set -x
   /bin/pwd
 
+  set -o pipefail
+
   # 1: Fresh run w/ checksums
   python3 $BMK --epochs 3             \
                --ckpt_checksum True   \
