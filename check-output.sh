@@ -7,7 +7,7 @@ set -eu
 # with nice error message
 
 # Options:
-# n: Not = Check that TOKEN is not found
+# -n: Not = Check that TOKEN is not found
 
 # Defaults
 NOT=0
@@ -21,7 +21,6 @@ do
   esac
 done
 shift $(( OPTIND - 1 ))
-
 
 if (( ${#} != 2 ))
 then
