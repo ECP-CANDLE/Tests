@@ -18,17 +18,23 @@ BMK=$2
 OUTPUT=$CANDLE_DATA_DIR/$MODEL_NAME/EXP000/RUN000
 
 echo
-echo "START: CR-1 $MODEL_NAME BMK $BMK ..."
+echo "START:  CR-1 $MODEL_NAME BMK $BMK ..."
+echo "OUTPUT: $OUTPUT"
 echo
 
 source $THIS/utils.sh
 source $THIS/setup-test.sh
 
+if [[ -e $OUTPUT ]]
+then
+  echo "removing old output..."
+  rm -r $OUTPUT
+fi
+
 (
+  set -o pipefail
   set -x
   /bin/pwd
-
-  set -o pipefail
 
   # 1: Fresh run w/ checksums
   python3 $BMK --epochs 3             \
