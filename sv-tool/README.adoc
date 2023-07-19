@@ -1,6 +1,8 @@
 
 = Supervisor tool tests
 
+== GA
+
 user-case-1::
 NT3 as Benchmark
 
@@ -9,3 +11,8 @@ GraphDRP as container.  Check the path to the SIF for your system.
 
 user-case-3::
 DeepTTC as container.  Check the path to the SIF for your system.
+
+== UPF
+
+user-case-4::
+NT3 as Benchmark.
