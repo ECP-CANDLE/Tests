@@ -1,0 +1,11 @@
+
+= Supervisor tool tests
+
+user-case-1::
+NT3 as Benchmark
+
+user-case-2::
+GraphDRP as container.  Check the path to the SIF for your system.
+
+user-case-3::
+DeepTTC as container.  Check the path to the SIF for your system.
