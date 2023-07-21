@@ -1,0 +1,38 @@
+Simple DeepTTC HPO that uses the supervisor tool on polaris.
+
+Example use:
+----
+$ supervisor polaris GA cfg-my-experiment-1.sh
+----
+
+=== Polaris Settings:
+
+To use Polaris, the user must specify and adhere to the "queue" that the job is placed in, which involves the number of processes (PROCS), the number of processes per node (PPN), and the walltime (WALLTIME). The possible queues are found here: https://docs.alcf.anl.gov/polaris/running-jobs/. Choose the queue to match the requirements of your job, and make sure to set the PROCS, PPN, and WALLTIME to the requirements of the queue. For example, the "debug" queue has a max node number of 10, so PROCS=12 / PPN=1 would not work, but PROCS=12 / PPN=6 would. 
+
+Because model evaluation can take 15+ minutes and GA works best with 4+ generations, "prod" or "preemptable" are the best queues for full HPO runs since they allow for longer than an hour walltime.
+
+Additionally, to run GA efficiently without leaving GPUs waiting, the user is recommended to set PROCS such that the entire generation is evaluated in one parallel computation. With default settings, the number of evaluations per generation is half the population size, and since 2 GPUs are used for non-model evaluation, this would mean PROCS=(POPULATION_SIZE/2) + 2. For example, with POPULATION_SIZE=16 and PROCS=10, 8 new models are evaluated in each generation.
+
+An example cfg-my-experiment-1.sh file could be as follows:
+
+----
+echo POLARIS-RUN SETTINGS
+
+PROCS=10
+PPN=10
+QUEUE="preemptive"
+WALLTIME=12:00:00
+echo PROCS $PROCS
+echo PPN $PPN
+echo QUEUE $QUEUE
+echo WALLTIME $WALLTIME
+export PROCS
+export PPN
+export QUEUE
+export WALLTIME
+
+export NUM_ITERATIONS=5
+export POPULATION_SIZE=16
+----
+
+This configuration file uses 1 node, evaluates 8 models at a time, and has a maximum running time of 12 hours.
