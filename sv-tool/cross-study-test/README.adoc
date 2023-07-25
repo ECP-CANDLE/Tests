@@ -1,4 +1,4 @@
-Simple uno cross-study that uses the supervisor tool.
+Simple p1b1 cross-study that uses the supervisor tool.
 
 Example use:
 ----
