@@ -15,7 +15,7 @@ export MUT_PROB=0.8
 export CX_PROB=0.2
 export MUT_INDPB=0.5
 export CX_INDPB=0.5
-export TOURNAMENT_SIZE=3
+export TOURNAMENT_SIZE=4
 
 # Lambda Settings
 # export CANDLE_CUDA_OFFSET=1
