@@ -92,6 +92,7 @@ export TOURNAMENT_SIZE=3
 Using `export` sets parameters for the workflow.
 
 Settings Explanation:
+
 - `PROCS` sets the number of processes to run at a time. Two processes are used for the workflow, while the others are dedicated to running the models, so `PROCS=3` runs 1 model at a time for example. It's recommended to set PROCS=(POPULATION_SIZE/2)+2 with default GA settings.
 - `PPN` sets the number of processes per node(GPU). This, along with PROCS, set the number of GPUs being used at a time. Note that PPN must fit the abilities of the GPUs on your computation system. It's recommended to set PPN as high as PROCS or what the computation system will allow.
 - `WALLTIME` sets the maximum time that the model can be left running on the computation system.
