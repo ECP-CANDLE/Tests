@@ -19,10 +19,11 @@ First, setup by executing the following commands:
 +
 - (If not done by the singularity container) Download the Data
 +
- * Download into the directory /CANDLE_DATA_DIR/common/Data, making the directory if necessary
- * Most models' data can be found link:https://ftp.mcs.anl.gov/pub/candle/public/improve/[here]
- * The data will likely need to be unzipped and moved to be in the right directory
+ - Download into the directory /CANDLE_DATA_DIR/common/Data, making the directory if necessary
+ - Most models' data can be found link:https://ftp.mcs.anl.gov/pub/candle/public/improve/[here]
+ - The data will likely need to be unzipped and moved to be in the right directory
 +
+
 
 == Example Command
 
