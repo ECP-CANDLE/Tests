@@ -12,13 +12,15 @@ First, setup by executing the following commands:
 - 'git clone https://github.com/ECP-CANDLE/Benchmarks.git' (this clones the Benchmarks respository)
 - `export PATH=~/Supervisor/bin:$PATH` (this allows you to use the supervisor tool) (make sure to have cloned the supervisor repository first)
 - Make CANDLE_DATA_DIR (this is the directory to read/write data and output):
-    - If on lambda: `mkdir -p /tmp/<user>`
-    - If on polaris: `mkdir -p /home/<user>/output`
-    - If on other computing systems: 'mkdir -p </somewhere_you_can_read_and_write_files>'
++
+-- If on lambda: `mkdir -p /tmp/<user>`
+-- If on polaris: `mkdir -p /home/<user>/output`
+-- If on other computing systems: `mkdir -p </somewhere_you_can_read_and_write_files>`
 - (If not done by the singularity container) Download the Data
-    - Download into the directory /CANDLE_DATA_DIR/common/Data, making the directory if necessary
-    - Most models' data can be found link:https://ftp.mcs.anl.gov/pub/candle/public/improve/[here]
-    - The data will likely need to be unzipped and moved to be in the right directory
++
+-- Download into the directory /CANDLE_DATA_DIR/common/Data, making the directory if necessary
+-- Most models' data can be found link:https://ftp.mcs.anl.gov/pub/candle/public/improve/[here]
+-- The data will likely need to be unzipped and moved to be in the right directory
 
 == Example Command
 
