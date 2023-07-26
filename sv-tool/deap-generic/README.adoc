@@ -169,12 +169,14 @@ The Genetic Algorithm is made to model evolution and natural selection by applyi
 (generations).
 
 Strategy
+
 - In the "simple" strategy, offspring are created with crossover AND mutation, and the selection for the next population happens from ONLY the offspring. In
 the "mu_plus_lambda" strategy, offspring are created with crossover OR mutation, and the selection for the next population happens from BOTH the offspring
 and parent generation. Also in the mu_plus_lambda strategy, the number of offspring in each generation is a chosen parameter, which can be controlled by the
 user through offspring_prop.
 
 Mutation
+
 - Mutation intakes two parameters: mut_prob and mut_indpb. The parameter mut_prob represents the probability that an individual will be mutated. Then, once an
 individual is selected as mutated, mut_indpb is the probability that each gene is mutated. For example, if an individual is represented by the array
 `[11.4, 7.6, 8.1]` where mut_prob=1 and mut_indpb=0.5, there's a 50 percent chance that 11.4 will be mutated, a 50 percent chance that 7.6 will be mutated,
@@ -184,6 +186,7 @@ mutation is rounded for integers to preserve their data type, and mutation is a 
 equate to similarity.
 
 Crossover
+
 - Crossover intake two parameters: cx_prob and cx_indpb, which operate much in the same way as cx_prob and cx_indpb. For example, given two individuals
 represented by the arrays `[1, 2, 3]` and `[4, 5, 6]` where cx_prob=1 and cx_indpb=0.5, there's a 50% chance that 1 and 4 will be 'crossed', a 50% chance that
 2 and 5 will be 'crossed', and a 50% chance that 3 and 6 will be 'crossed'. Also, if either mut_prov or mut_indpb equal 0, no crossover will happen. The definition
@@ -192,6 +195,7 @@ of 'crossed' depends on the crossover function, which must be chosen carefully t
 cx_Blend, which averages values.
 
 Selection
+
 - Selection has various customizations, with tournaments being our implementation. In tournament selection, 'tournsize' individuals are chosen, and the individual
 with the best fitness score is selected. This repeats until the desired number of individuals are selected. Note that choosing individuals is done with replacement,
 which introduces some randomness to who is selected. Although unlikely, it's possible for one individual to be the entire next population. It's also possible for
