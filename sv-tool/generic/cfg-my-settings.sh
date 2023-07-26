@@ -19,7 +19,7 @@ export TOURNAMENT_SIZE=3
 
 # Lambda Settings
 # export CANDLE_CUDA_OFFSET=1
-# export CANDLE_DATA_DIR=/tmp/data
+# export CANDLE_DATA_DIR=/tmp/weaverr
 
 # Polaris Settings
 # export QUEUE="debug"

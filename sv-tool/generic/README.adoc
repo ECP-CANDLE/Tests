@@ -8,11 +8,17 @@ The user is encouraged to clone the home directory of this README file, change t
 
 First, setup by executing the following commands:
 
-- `git clone https://github.com/ECP-CANDLE/Supervisor.git` (this clones the supervisor repository)
+- `git clone https://github.com/ECP-CANDLE/Supervisor.git` (this clones the Supervisor repository)
+- 'git clone https://github.com/ECP-CANDLE/Benchmarks.git' (this clones the Benchmarks respository)
 - `export PATH=~/Supervisor/bin:$PATH` (this allows you to use the supervisor tool) (make sure to have cloned the supervisor repository first)
-- If on lambda: `mkdir -p /tmp/data` (this makes the directory to read/write data and output on lambda if it doesn't already exist)
-- If on polaris: `mkdir -p /home/<user>/output` (this makes a directory to read/write data and output on polaris if it doesn't already exist) (replace <user> with your name on the system)
-- If on other computing systems: 'mkdir -p </somewhere_you_can_read_and_write_files>'
+- Make CANDLE_DATA_DIR (this is the directory to read/write data and output):
+  - If on lambda: `mkdir -p /tmp/<user>`
+  - If on polaris: `mkdir -p /home/<user>/output`
+  - If on other computing systems: 'mkdir -p </somewhere_you_can_read_and_write_files>'
+- (If not done by the singularity container) Download the Data
+  - Download into the directory /CANDLE_DATA_DIR/common/Data, making the directory if necessary
+  - Most models' data can be found link:https://ftp.mcs.anl.gov/pub/candle/public/improve/[here]
+  - The data will likely need to be unzipped and moved to be in the right directory
 
 == Example Command
 
@@ -32,17 +38,18 @@ The default file looks like:
 source_cfg -v cfg-my-settings.sh
 
 export CANDLE_MODEL_TYPE="SINGULARITY"
-export MODEL_NAME=/software/improve/images/DeepTTC.sif
-export PARAM_SET_FILE=general_params.json
+# export MODEL_NAME=/software/improve/images/<model>.sif  #Lambda
+# export MODEL_NAME=/lus/grand/projects/CSC249ADOA01/images/<model>.sif  #Polaris
+export PARAM_SET_FILE=hyperparams.json
 ----
 
 File explanation:
 - `source_cfg -v cfg-my-settings.sh`. This line says that the workflow should source the 'cfg-my-settings.sh' file for workflow parameters.
 - `export CANDLE_MODEL_TYPE="SINGULARITY"`. This line says to use singularity containers for the workflow.
-- `export MODEL_NAME=/software/improve/images/DeepTTC.sif`. This line says to use the DeepTTC model in the workflow.
-- `export PARAM_SET_FILE=general_params.json`. This line says to use the 'general_params.json' file for the model's hyperparameter space.
+- `export MODEL_NAME=`. This line gives the path to the sif file for the model used for your computation system
+- `export PARAM_SET_FILE=hyperparams.json`. This line says to use the 'general_params.json' file for the model's hyperparameter space.
 
-To run a different model in the workflow, change the 'MODEL_NAME' line. For example, `export MODEL_NAME=/software/improve/images/GraphDRP.sif` would run GraphDRP.
+For example, `export MODEL_NAME=
 
 == The cfg-my-settings.sh file
 
@@ -144,3 +151,7 @@ The default file looks like:
 
 This file is made to be applicable to the large majority of models by using common hyperparameters to vary. The user is encouraged to adapt this file depending on the model and their desired hyperparameters of study.
 
+
+== Debugging
+
+Navigate to /CANDLE_DATA_DIR/<model>/Output/ to find the hyperparameter experiments with your model. Inside of these, the runs are listed, each with their own 'model.log', which will contain the error if there is one.
