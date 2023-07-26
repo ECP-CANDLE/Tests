@@ -105,7 +105,7 @@ Settings Explanation:
 
 Other computation sytems may have other parameters that you need to export.
 
-== The general_params.json file
+== The hyperparams.json file
 
 The default file looks like:
 
