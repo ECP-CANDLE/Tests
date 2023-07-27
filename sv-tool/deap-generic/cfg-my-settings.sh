@@ -19,9 +19,9 @@ export TOURNAMENT_SIZE=4
 
 # Lambda Settings
 # export CANDLE_CUDA_OFFSET=1
-# export CANDLE_DATA_DIR=/tmp/<user>/output
+# export CANDLE_DATA_DIR=/tmp/<user>/data_dir
 
 # Polaris Settings
 # export QUEUE="debug"
-# export CANDLE_DATA_DIR=/home/<user>/output
+# export CANDLE_DATA_DIR=/home/<user>/data_dir
 
