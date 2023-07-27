@@ -8,9 +8,12 @@ The user is encouraged to clone the home directory of this README file, change t
 
 First, setup by executing the following commands:
 
-- `git clone https://github.com/ECP-CANDLE/Supervisor.git` (this clones the Supervisor repository)
-- 'git clone https://github.com/ECP-CANDLE/Benchmarks.git' (this clones the Benchmarks respository)
-- `export PATH=~/Supervisor/bin:$PATH` (this allows you to use the supervisor tool) (make sure to have cloned the supervisor repository first)
+- Add the supervisor tool to your path
++
+ * If on lambda: 'PATH=/software/improve/Supervisor/bin for lambda'
+ * If on polaris: 'PATH=/lus/grand/projects/CSC249ADOA01/Supervisor/bin:$PATH'
+ * If on a system where Supervisor installed: clone Supervisor with 'git clone https://github.com/ECP-CANDLE/Supervisor.git' and then add to PATH with 'export PATH=~/path/to/Supervisor/bin:$PATH' 
++
 - Make CANDLE_DATA_DIR (this is the directory to read/write data and output):
 +
  * If on lambda: `mkdir -p /tmp/<user>`
