@@ -1,6 +1,6 @@
 = Running With the Supervisor Tool
 
-Once in the 'documentation' directory, the following is a guide to running your Genetic Algorithm Hyperparameter Optimization workflow.
+The following is a guide to running your Genetic Algorithm Hyperparameter Optimization workflow.
 
 The user is encouraged to clone the home directory of this README file, change the model being sourced and the hyperparameter space, then run the HPO workflow with their model.
 
@@ -33,6 +33,8 @@ supervisor lambda GA cfg-1.sh
 ----
 
 This command will use the 'supervisor' tool to run the Genetic Algorithm ('GA') workflow using the 'cfg-1.sh' file on the 'lambda' computing system. In the case of using a different computing system, that computing system should replace lambda in the command.
+
+This command must be run inside the 'deap-generic' directory, or whatever copy you made of it
 
 == The cfg-1.sh file
 
