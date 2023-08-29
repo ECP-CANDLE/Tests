@@ -87,7 +87,7 @@ export TOURNSIZE=4
 
 # Lambda Settings
 # export CANDLE_DATA_DIR=/tmp/data
-# export CANDLE_CUDA_OFFSET=1
+# export CANDLE_CUDA_OFFSET=2
 
 # Polaris Settings
 # export CANDLE_DATA_DIR=/home/weaverr/output
