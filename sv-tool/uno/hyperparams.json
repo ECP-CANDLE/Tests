@@ -1,0 +1,1008 @@
+[
+
+  {
+    "name": "train_split_file",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "CCLE_split_0_train.txt"
+    ]
+  },
+  {
+    "name": "val_split_file",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "CCLE_split_0_val.txt"
+    ]
+  },
+  {
+    "name": "test_split_file",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "CCLE_split_0_test.txt"
+    ]
+  },
+  {
+    "name": "ml_data_outdir",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "./ml_data/CCLE-CCLE/split_0"
+    ]
+  },
+  {
+    "name": "train_ml_data_dir",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "./ml_data/CCLE-CCLE/split_0"
+    ]
+  },
+  {
+    "name": "val_ml_data_dir",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "./ml_data/CCLE-CCLE/split_0"
+    ]
+  },
+  {
+    "name": "model_outdir",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "./out_models/CCLE/split_0"
+    ]
+  },
+  {
+    "name": "test_ml_data_dir",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "./ml_data/CCLE-CCLE/split_0"
+    ]
+  },
+  {
+    "name": "model_dir",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "./out_models/CCLE/split_0"
+    ]
+  },
+  {
+    "name": "infer_outdir",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "./out_infer/CCLE-CCLE/split_0"
+    ]
+  },
+  
+
+
+  {
+    "name": "ge_scaling",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "std",
+      "minmax",
+      "minabs",
+      "robust",
+      "l1",
+      "l2",
+      "max",
+      "power_yj"
+    ]
+  },
+  {
+    "name": "md_scaling",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "std",
+      "minmax",
+      "minabs",
+      "robust",
+      "l1",
+      "l2",
+      "max",
+      "power_yj"
+    ]
+  },
+  
+
+
+  {
+    "name": "canc_num_layers",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_1_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_2_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [64, 128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_3_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_4_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_5_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_6_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_7_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_8_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_9_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "canc_layer_1_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_2_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_3_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_4_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_5_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_6_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_7_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_8_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_9_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "canc_layer_1_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "canc_layer_2_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "canc_layer_3_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "canc_layer_4_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "canc_layer_5_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "canc_layer_6_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "canc_layer_7_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "canc_layer_8_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "canc_layer_9_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+
+  {
+    "name": "drug_num_layers",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_1_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_2_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [64, 128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_3_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_4_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_5_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_6_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_7_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_8_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_9_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "drug_layer_1_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_2_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_3_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_4_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_5_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_6_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_7_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_8_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_9_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "drug_layer_1_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "drug_layer_2_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "drug_layer_3_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "drug_layer_4_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "drug_layer_5_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "drug_layer_6_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "drug_layer_7_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "drug_layer_8_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "drug_layer_9_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+
+  {
+    "name": "interaction_num_layers",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_1_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_2_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [64, 128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_3_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_4_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_5_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_6_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512, 1024],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_7_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_8_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_9_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [32, 64, 128, 256, 512],
+    "sigma": 1
+  },
+  {
+    "name": "interaction_layer_1_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_2_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_3_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_4_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_5_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_6_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_7_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_8_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_9_dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.8,
+    "sigma": 0.05
+  },
+  {
+    "name": "interaction_layer_1_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "interaction_layer_2_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "interaction_layer_3_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "interaction_layer_4_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "interaction_layer_5_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "interaction_layer_6_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "interaction_layer_7_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "interaction_layer_8_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+  {
+    "name": "interaction_layer_9_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "elu",
+      "softplus",
+      "softsign",
+      "relu",
+      "tanh",
+      "sigmoid",
+      "hard_sigmoid",
+      "linear"
+    ]
+  },
+
+  {
+    "name": "epochs",
+    "type": "constant",
+    "value": 150
+  },
+  {
+    "name": "batch_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [8, 16, 32, 64, 128, 256, 512, 1024, 2048],
+    "sigma": 1
+  },
+  {
+    "name": "raw_max_lr",
+    "type": "float",
+    "lower": 1e-10,
+    "upper": 1e-6,
+    "sigma": 1e-8
+  },
+  {
+    "name": "lr_log_10_range",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [2, 3, 4],
+    "sigma": 1
+  },
+  {
+    "name": "warmup_epochs",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [3, 4, 5, 6, 7],
+    "sigma": 1
+  },
+  {
+    "name": "warmup_type",
+    "type": "ordered",
+    "element_type": "string",
+    "values": ["linear", "quadratic", "exponential"],
+    "sigma": 1
+  },
+  {
+    "name": "reduce_lr_patience",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [3, 4, 5, 6, 7],
+    "sigma": 1
+  },
+  {
+    "name": "reduce_lr_factor",
+    "type": "float",
+    "lower": 1e-10,
+    "upper": 1e-6,
+    "sigma": 1e-8
+  }
+
+]
