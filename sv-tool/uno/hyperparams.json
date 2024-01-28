@@ -1003,6 +1003,21 @@
     "lower": 1e-10,
     "upper": 1e-6,
     "sigma": 1e-8
+  },
+  {
+    "name": "optimizer",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "Adam",
+      "SGD",
+      "RMSprop",
+      "Adagrad",
+      "Adadelta",
+      "Adamax",
+      "Nadam",
+      "Ftrl"
+    ]
   }
 
 ]
