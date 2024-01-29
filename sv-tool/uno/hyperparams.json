@@ -973,8 +973,8 @@
     "name": "lr_log_10_range",
     "type": "ordered",
     "element_type": "int",
-    "values": [2, 3, 4],
-    "sigma": 1
+    "values": [1, 2, 3, 4],
+    "sigma": 0.5
   },
   {
     "name": "warmup_epochs",
@@ -987,8 +987,8 @@
     "name": "warmup_type",
     "type": "ordered",
     "element_type": "string",
-    "values": ["linear", "quadratic", "exponential"],
-    "sigma": 1
+    "values": ["none", "linear", "quadratic", "exponential"],
+    "sigma": 0.5
   },
   {
     "name": "reduce_lr_patience",
@@ -1000,9 +1000,9 @@
   {
     "name": "reduce_lr_factor",
     "type": "float",
-    "lower": 1e-10,
-    "upper": 1e-6,
-    "sigma": 1e-8
+    "lower": 0.2,
+    "upper": 0.9,
+    "sigma": 0.1
   },
   {
     "name": "optimizer",
