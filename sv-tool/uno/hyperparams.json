@@ -5,7 +5,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "CCLE_split_0_train.txt"
+      "gCSI_split_0_train.txt"
     ]
   },
   {
@@ -13,7 +13,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "CCLE_split_0_val.txt"
+      "gCSI_split_0_val.txt"
     ]
   },
   {
@@ -21,7 +21,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "CCLE_split_0_test.txt"
+      "gCSI_split_0_test.txt"
     ]
   },
   {
@@ -29,7 +29,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "./ml_data/CCLE-CCLE/split_0"
+      "./ml_data/gCSI-gCSI/split_0"
     ]
   },
   {
@@ -37,7 +37,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "./ml_data/CCLE-CCLE/split_0"
+      "./ml_data/gCSI-gCSI/split_0"
     ]
   },
   {
@@ -45,7 +45,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "./ml_data/CCLE-CCLE/split_0"
+      "./ml_data/gCSI-gCSI/split_0"
     ]
   },
   {
@@ -53,7 +53,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "./out_models/CCLE/split_0"
+      "./out_models/gCSI/split_0"
     ]
   },
   {
@@ -61,7 +61,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "./ml_data/CCLE-CCLE/split_0"
+      "./ml_data/gCSI-gCSI/split_0"
     ]
   },
   {
@@ -69,7 +69,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "./out_models/CCLE/split_0"
+      "./out_models/gCSI/split_0"
     ]
   },
   {
@@ -77,7 +77,7 @@
     "type": "categorical",
     "element_type": "string",
     "values": [
-      "./out_infer/CCLE-CCLE/split_0"
+      "./out_infer/gCSI-gCSI/split_0"
     ]
   },
   
@@ -118,9 +118,9 @@
 
   {
     "name": "canc_num_layers",
-    "type": "ordered",
-    "element_type": "int",
-    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "type": "int",
+    "lower": 1,
+    "upper": 9,
     "sigma": 1
   },
   {
@@ -396,9 +396,9 @@
 
   {
     "name": "drug_num_layers",
-    "type": "ordered",
-    "element_type": "int",
-    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "type": "int",
+    "lower": 1,
+    "upper": 9,
     "sigma": 1
   },
   {
@@ -674,9 +674,9 @@
 
   {
     "name": "interaction_num_layers",
-    "type": "ordered",
-    "element_type": "int",
-    "values": [1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "type": "int",
+    "lower": 1,
+    "upper": 9,
     "sigma": 1
   },
   {
@@ -965,9 +965,10 @@
   {
     "name": "raw_max_lr",
     "type": "float",
+    "use_log_scale": "True",
     "lower": 1e-10,
     "upper": 1e-6,
-    "sigma": 1e-8
+    "sigma": 0.1
   },
   {
     "name": "lr_log_10_range",
@@ -994,7 +995,7 @@
     "name": "reduce_lr_patience",
     "type": "ordered",
     "element_type": "int",
-    "values": [3, 4, 5, 6, 7],
+    "values": [2, 3, 4, 5, 6],
     "sigma": 1
   },
   {
