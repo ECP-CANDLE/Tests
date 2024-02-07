@@ -1,6 +1,34 @@
 [
   
   {
+    "name": "ge_scaling",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "std",
+      "minmax",
+      "minabs",
+      "robust",
+      "l1",
+      "l2",
+      "max",
+      "power_yj"
+    ]
+  },
+
+  {
+    "name": "dense",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "500 100 50",
+      "1000 500 100 50",
+      "2000 1000 500 100 50",
+      "2000 1000 1000 500 100 50",
+      "2000 1000 1000 1000 500 100 50"
+    ]
+  },
+  {
     "name": "activation",
     "type": "categorical",
     "element_type": "string",
@@ -16,27 +44,47 @@
       "linear"
     ]
   },
-
   {
-    "name": "learning_rate",
+    "name": "dropout",
     "type": "float",
-    "lower": 0.000001,
-    "upper": 0.2,
+    "lower": 0.0,
+    "upper": 0.8,
     "sigma": 0.05
   },
 
   {
+    "name": "learning_rate",
+    "type": "float",
+    "lower": 0.0001,
+    "upper": 0.01,
+    "sigma": 0.001
+  },
+  {
     "name": "batch_size",
     "type": "ordered",
     "element_type": "int",
-    "values": [32, 64, 128],
+    "values": [8, 16, 32, 64, 128, 256, 512, 1024, 2048],
     "sigma": 1
+  },
+  {
+    "name": "reduce_lr_patience",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [2, 3, 4, 5, 6],
+    "sigma": 1
+  },
+  {
+    "name": "reduce_lr_factor",
+    "type": "float",
+    "lower": 0.2,
+    "upper": 0.9,
+    "sigma": 0.1
   },
 
   {
     "name": "epochs",
     "type": "constant",
-    "value": 5
+    "value": 150
   }
 
 ]
