@@ -949,6 +949,15 @@
       "linear"
     ]
   },
+  {
+    "name": "regression_activation",
+    "type": "categorical",
+    "element_type": "string",
+    "values": [
+      "softmax",
+      "sigmoid"
+    ]
+  },
 
   {
     "name": "epochs",
@@ -963,18 +972,10 @@
     "sigma": 1
   },
   {
-    "name": "raw_max_lr",
-    "type": "float",
-    "use_log_scale": "True",
-    "lower": 1e-10,
-    "upper": 1e-6,
-    "sigma": 0.1
-  },
-  {
     "name": "lr_log_10_range",
     "type": "ordered",
     "element_type": "int",
-    "values": [1, 2, 3, 4],
+    "values": [1, 2, 3],
     "sigma": 0.5
   },
   {
