@@ -972,6 +972,14 @@
     "sigma": 1
   },
   {
+    "name": "raw_max_lr",
+    "type": "float",
+    "use_log_scale": true,
+    "lower": 0.000000001,
+    "upper": 0.00001,
+    "sigma": 0.1
+  },
+  {
     "name": "lr_log_10_range",
     "type": "ordered",
     "element_type": "int",
