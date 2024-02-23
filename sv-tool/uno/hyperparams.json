@@ -1,6 +1,41 @@
 [
 
   {
+    "name": "ml_data_outdir",
+    "type": "constant",
+    "value": "/homes/weaverr/Model_Curation/Benchmarks/Pilot1/Uno_IMPROVE/ml_data/gCSI-gCSI/split_0"
+  },
+  {
+    "name": "train_ml_data_dir",
+    "type": "constant",
+    "value": "/homes/weaverr/Model_Curation/Benchmarks/Pilot1/Uno_IMPROVE/ml_data/gCSI-gCSI/split_0"
+  },
+  {
+    "name": "val_ml_data_dir",
+    "type": "constant",
+    "value": "/homes/weaverr/Model_Curation/Benchmarks/Pilot1/Uno_IMPROVE/ml_data/gCSI-gCSI/split_0"
+  },
+  {
+    "name": "model_outdir",
+    "type": "constant",
+    "value": "/homes/weaverr/Model_Curation/Benchmarks/Pilot1/Uno_IMPROVE/out_models/gCSI/split_0"
+  },
+  {
+    "name": "test_ml_data_dir",
+    "type": "constant",
+    "value": "/homes/weaverr/Model_Curation/Benchmarks/Pilot1/Uno_IMPROVE/ml_data/gCSI-gCSI/split_0"
+  },
+  {
+    "name": "model_dir",
+    "type": "constant",
+    "value": "/homes/weaverr/Model_Curation/Benchmarks/Pilot1/Uno_IMPROVE/out_models/gCSI/split_0"
+  },
+  {
+    "name": "infer_outdir",
+    "type": "constant",
+    "value": "/homes/weaverr/Model_Curation/Benchmarks/Pilot1/Uno_IMPROVE/out_infer/gCSI-gCSI/split_0"
+  }, 
+  {
     "name": "hyperparam_space",
     "type": "constant",
     "value": "global"
