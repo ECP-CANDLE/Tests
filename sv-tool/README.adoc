@@ -12,7 +12,7 @@ First, setup by executing the following commands:
 +
  * If on lambda: 'PATH=/software/improve/Supervisor/bin for lambda'
  * If on polaris: 'PATH=/lus/grand/projects/CSC249ADOA01/Supervisor/bin:$PATH'
- * If on a system where Supervisor installed: clone Supervisor with 'git clone https://github.com/ECP-CANDLE/Supervisor.git' and then add to PATH with 'export PATH=~/path/to/Supervisor/bin:$PATH' 
+ * If not on a system where Supervisor installed: clone Supervisor with 'git clone https://github.com/ECP-CANDLE/Supervisor.git' and then add to PATH with 'export PATH=~/path/to/Supervisor/bin:$PATH' 
 +
 - Make CANDLE_DATA_DIR (this is the directory to read/write data and output):
 +
