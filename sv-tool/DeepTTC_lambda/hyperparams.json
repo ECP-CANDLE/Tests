@@ -1,0 +1,17 @@
+[
+
+  {
+    "name": "learning_rate",
+    "type": "float",
+    "lower": 0.000001,
+    "upper": 0.0001,
+    "sigma": 0.00005
+  },
+  
+  {
+    "name": "epochs",
+    "type": "constant",
+    "value": 1
+  }
+
+]

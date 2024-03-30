@@ -3,22 +3,25 @@
   {
     "name": "train_ml_data_dir",
     "type": "constant",
-    "value": "/tmp/weaverr/Data/ml_data/CCLE-CCLE/split_0"
+    "value": "/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0"
   },
   {
     "name": "val_ml_data_dir",
     "type": "constant",
-    "value": "/tmp/weaverr/Data/ml_data/CCLE-CCLE/split_0"
+    "value": "/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0"
   },
   {
     "name": "model_outdir",
     "type": "constant",
-    "value": "/tmp/weaverr/Data/out_models/CCLE/split_0"
+    "value": "/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0"
   },
+
+
   {
-    "name": "test_ml_data_dir",
+    "name": "epochs",
     "type": "constant",
-    "value": "/tmp/weaverr/Data/ml_data/CCLE-CCLE/split_0"
+    "element_type": "int",
+    "value": 100
   },
 
 
@@ -26,15 +29,14 @@
     "name": "batch_size",
     "type": "ordered",
     "element_type": "int",
-    "values": [32, 64, 128, 256, 512, 1024]
+    "values": [16, 32, 64, 128, 256, 512, 1024]
   },
 
   {
-    "name": "raw_max_lr",
+    "name": "learning_rate",
     "type": "float",
-    "use_log_scale": true,
     "lower": 0.00001,
-    "upper": 0.1
+    "upper": 0.001
   }
 
 ]

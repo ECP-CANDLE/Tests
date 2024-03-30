@@ -1,0 +1,52 @@
+
+report_env() ...
+
+TURBINE_HOME: /homes/woz/Public/sfw/swift-t/2022-11-02/turbine
+
+PATH: /homes/woz/Public/sfw/Anaconda/bin
+PATH: /homes/woz/Public/sfw/swift-t/2022-11-02/stc/bin
+PATH: /lambda_stor/homes/weaverr/.vscode-server/bin/0ee08df0cf4527e40edc9aa28f4b5bd38bbff2b2/bin/remote-cli
+PATH: /homes/weaverr/.local/bin
+PATH: /homes/weaverr/miniconda3/envs/IMPROVE/bin
+PATH: /homes/weaverr/miniconda3/condabin
+PATH: /homes/weaverr/.local/bin
+PATH: /usr/local/sbin
+PATH: /usr/local/bin
+PATH: /usr/sbin
+PATH: /usr/bin
+PATH: /sbin
+PATH: /bin
+PATH: /usr/games
+PATH: /usr/local/games
+PATH: /snap/bin
+PATH: /homes/weaverr/Supervisor/bin
+PATH: /homes/weaverr/Supervisor/bin
+
+LLP: /homes/woz/Public/sfw/R-4.1.0/lib/R/lib
+LLP: 
+
+
+PYTHONPATH: /homes/woz/Public/sfw/swift-t/2022-11-02/turbine/py
+PYTHONPATH: 
+PYTHONPATH: /homes/weaverr/Model_Curation/Python_Libs/IMPROVE
+PYTHONPATH: /homes/weaverr/Model_Curation/Python_Libs/IMPROVE
+PYTHONPATH: /lambda_stor/homes/weaverr/Supervisor/workflows/common/python
+PYTHONPATH: /lambda_stor/homes/weaverr/Supervisor/models/OneD
+PYTHONPATH: /lambda_stor/homes/weaverr/Supervisor/models/Random
+PYTHONPATH: /lambda_stor/homes/weaverr/Supervisor/models/Comparator
+PYTHONPATH: /lambda_stor/homes/weaverr/Supervisor/workflows/common/ext/EQ-Py
+PYTHONPATH: /lambda_stor/homes/weaverr/Supervisor/workflows/common/ext/EQ-Py
+PYTHONPATH: /lambda_stor/homes/weaverr/Supervisor/workflows/common/python
+
+PYTHON: /homes/woz/Public/sfw/Anaconda/bin/python
+PYTHON: /homes/woz/Public/sfw/Anaconda/bin/python3
+
+report_env() done.
+
+mkdir: created directory '/tmp/weaverr/Data/uno_improve/Output/EXP000/run_01_001_0007'
+redirecting to: LOG_FILE=/tmp/weaverr/Data/uno_improve/Output/EXP000/run_01_001_0007/model.log
+
+Swift: user work error:
+app: error: <Child exited with code: 1> command: bash /lambda_stor/homes/weaverr/Supervisor/workflows/common/sh/model.sh {} {{"train_split_file": "CCLE_split_0_train.txt", "val_split_file": "CCLE_split_0_val.txt", "test_split_file": "CCLE_split_0_test.txt", "ml_data_outdir": "./ml_data/CCLE-CCLE/split_0", "train_ml_data_dir": "./ml_data/CCLE-CCLE/split_0", "val_ml_data_dir": "./ml_data/CCLE-CCLE/split_0", "model_outdir": "./out_models/CCLE/split_0", "test_ml_data_dir": "./ml_data/CCLE-CCLE/split_0", "model_dir": "./out_models/CCLE/split_0", "infer_outdir": "./out_infer/CCLE-CCLE/split_0", "ge_scaling": "minabs", "md_scaling": "std", "canc_num_layers": 5, "canc_layer_1_size": 2048, "canc_layer_2_size": 128, "canc_layer_3_size": 64, "canc_layer_4_size": 128, "canc_layer_5_size": 32, "canc_layer_6_size": 64, "canc_layer_7_size": 64, "canc_layer_8_size": 64, "canc_layer_9_size": 128, "canc_layer_1_dropout": 0.7227103279381794, "canc_layer_2_dropout": 0.661268059258722, "canc_layer_3_dropout": 0.6089828888963624, "canc_layer_4_dropout": 0.2373170341271215, "canc_layer_5_dropout": 0.38526232986401415, "canc_layer_6_dropout": 0.14143187679693298, "canc_layer_7_dropout": 0.3026780911909541, "canc_layer_8_dropout": 0.7270745708812494, "canc_layer_9_dropout": 0.34156473034169416, "canc_layer_1_activation": "softplus", "canc_layer_2_activation": "relu", "canc_layer_3_activation": "sigmoid", "canc_layer_4_activation": "linear", "canc_layer_5_activation": "elu", "canc_layer_6_activation": "elu", "canc_layer_7_activation": "softsign", "canc_layer_8_activation": "sigmoid", "canc_layer_9_activation": "sigmoid", "drug_num_layers": 1, "drug_layer_1_size": 2048, "drug_layer_2_size": 1024, "drug_layer_3_size": 2048, "drug_layer_4_size": 64, "drug_layer_5_size": 256, "drug_layer_6_size": 128, "drug_layer_7_size": 256, "drug_layer_8_size": 32, "drug_layer_9_size": 128, "drug_layer_1_dropout": 0.07126049496493128, "drug_layer_2_dropout": 0.6581825233114322, "drug_layer_3_dropout": 0.1887434058973362, "drug_layer_4_dropout": 0.49606121548385435, "drug_layer_5_dropout": 0.45360579817479024, "drug_layer_6_dropout": 0.39445413722445527, "drug_layer_7_dropout": 0.4825738069191024, "drug_layer_8_dropout": 0.7301936965421882, "drug_layer_9_dropout": 0.16070707432011064, "drug_layer_1_activation": "sigmoid", "drug_layer_2_activation": "relu", "drug_layer_3_activation": "hard_sigmoid", "drug_layer_4_activation": "softplus", "drug_layer_5_activation": "relu", "drug_layer_6_activation": "linear", "drug_layer_7_activation": "elu", "drug_layer_8_activation": "tanh", "drug_layer_9_activation": "softsign", "interaction_num_layers": 9, "interaction_layer_1_size": 256, "interaction_layer_2_size": 64, "interaction_layer_3_size": 64, "interaction_layer_4_size": 256, "interaction_layer_5_size": 128, "interaction_layer_6_size": 512, "interaction_layer_7_size": 512, "interaction_layer_8_size": 64, "interaction_layer_9_size": 64, "interaction_layer_1_dropout": 0.01696891327746597, "interaction_layer_2_dropout": 0.44518269878398287, "interaction_layer_3_dropout": 0.726830234936403, "interaction_layer_4_dropout": 0.327476559081717, "interaction_layer_5_dropout": 0.1298844953354945, "interaction_layer_6_dropout": 0.5547917568539918, "interaction_layer_7_dropout": 0.3763031133221132, "interaction_layer_8_dropout": 0.703911222544304, "interaction_layer_9_dropout": 0.4744931146641933, "interaction_layer_1_activation": "elu", "interaction_layer_2_activation": "elu", "interaction_layer_3_activation": "hard_sigmoid", "interaction_layer_4_activation": "softplus", "interaction_layer_5_activation": "softsign", "interaction_layer_6_activation": "linear", "interaction_layer_7_activation": "elu", "interaction_layer_8_activation": "elu", "interaction_layer_9_activation": "elu", "epochs": 150, "batch_size": 8, "raw_max_lr": 6.94329010557555e-07, "lr_log_10_range": 3, "warmup_epochs": 5, "warmup_type": "quadratic", "reduce_lr_patience": 5, "reduce_lr_factor": 9.491132133525379e-07, "optimizer": "RMSprop"}} EXP000 run_01_001_0007 SINGULARITY /software/improve/images/uno_improve.sif train
+
+Swift: Aborting MPI job...
